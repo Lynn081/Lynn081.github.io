@@ -199,67 +199,68 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#前言<br> 之前在博客园跟CDNS都注册了博客，后面觉得自己搭一个才属于自己，跟着各种大神博客教程折腾，中途遇到了很多意料之外的问题，寻找方案，也还算是搭出个样子了。以后接触更多再修改吧！跨出第一步很容易，可是坚持下来就比较难了！下面就介绍我的搭建过程吧，不好的地方多多指教。<code>^_^</code></p>
-<h2 id="我是分界线"><a href="#我是分界线" class="headerlink" title="######我是分界线"></a>######我是分界线</h2><p>#主要步骤</p>
-<pre><code>* git环境
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p> 之前在博客园跟CDNS都注册了博客，后面觉得自己搭一个才属于自己，跟着各种大神博客教程折腾，中途遇到了很多意料之外的问题，寻找方案，也还算是搭出个样子了。以后接触更多再修改吧！跨出第一步很容易，可是坚持下来就比较难了！下面就介绍我的搭建过程吧，不好的地方多多指教。<code>^_^</code></p>
+<h6 id="我是分界线"><a href="#我是分界线" class="headerlink" title="我是分界线"></a>我是分界线</h6><hr>
+<h1 id="主要步骤"><a href="#主要步骤" class="headerlink" title="主要步骤"></a>主要步骤</h1><pre><code>* git环境
 * 安装Nodejs
 * 用github page建一个库
 * 安装hexo
 * 配置主题
 </code></pre><p>下面就分别来讲讲这几个步骤：</p>
-<p>##git环境<br>了解<a href="http://baike.baidu.com/subview/1531489/12032478.htm" target="_blank" rel="external">git</a>，然后下载一个git安装到电脑上.打开安装完以后，我们需要检测是否安装完成，打开dos界面（传说中的黑框框），<code>WIN+R</code>输入<code>cmd</code>，敲上命令，出现版本号就成功了。</p>
+<h2 id="git环境"><a href="#git环境" class="headerlink" title="git环境"></a>git环境</h2><p>了解<a href="http://baike.baidu.com/subview/1531489/12032478.htm" target="_blank" rel="external">git</a>，然后下载一个git安装到电脑上.打开安装完以后，我们需要检测是否安装完成，打开dos界面（传说中的黑框框），<code>WIN+R</code>输入<code>cmd</code>，敲上命令，出现版本号就成功了。</p>
 <pre><code>git --version
-</code></pre><h2 id="我是分界线-1"><a href="#我是分界线-1" class="headerlink" title="#######我是分界线"></a>#######我是分界线</h2><p>##安装Nodejs<br>先简单了解下<a href="http://baike.baidu.com/link?url=7ZBP5WeFD45hLlX_86aNr3-hn8096X5uBkYgzSwo3iJIDNPZKix-ID7mnMRqUFSejp5HDoJHf-v_oMGVP0UcPY7BYt_4k8y2jtdF7ptRO4C8NJPOmKStdhiUykBVcdQPMyPGbNSGLKhAih0E4tqex_" target="_blank" rel="external">Nodejs</a>吧。然后就到官网去下载一个<a href="https://nodejs.org/en/" target="_blank" rel="external">Nodejs</a>,一般下载<code>v4.4.4LTS</code>,打开安装完以后，我们需要检测是否安装完成，上命令</p>
+</code></pre><h6 id="我是分界线-1"><a href="#我是分界线-1" class="headerlink" title="我是分界线"></a>我是分界线</h6><hr>
+<h2 id="安装Nodejs"><a href="#安装Nodejs" class="headerlink" title="安装Nodejs"></a>安装Nodejs</h2><p>先简单了解下<a href="http://baike.baidu.com/link?url=7ZBP5WeFD45hLlX_86aNr3-hn8096X5uBkYgzSwo3iJIDNPZKix-ID7mnMRqUFSejp5HDoJHf-v_oMGVP0UcPY7BYt_4k8y2jtdF7ptRO4C8NJPOmKStdhiUykBVcdQPMyPGbNSGLKhAih0E4tqex_" target="_blank" rel="external">Nodejs</a>吧。然后就到官网去下载一个<a href="https://nodejs.org/en/" target="_blank" rel="external">Nodejs</a>,一般下载<code>v4.4.4LTS</code>,打开安装完以后，我们需要检测是否安装完成，上命令</p>
 <pre><code>node -v
 npm -v
 </code></pre><p>看到如下界面就OK了：<br><img src="http://7xtsii.com1.z0.glb.clouddn.com/a5.png" alt=""></p>
-<h2 id="我是分界线-2"><a href="#我是分界线-2" class="headerlink" title="######我是分界线"></a>######我是分界线</h2><p>##用github page建一个库<br>首先得有一个github账号，没有就去注册一个吧，据我了解，这是程序员必备品。</p>
+<h6 id="我是分界线-2"><a href="#我是分界线-2" class="headerlink" title="我是分界线"></a>我是分界线</h6><hr>
+<h2 id="用github-page建一个库"><a href="#用github-page建一个库" class="headerlink" title="用github page建一个库"></a>用github page建一个库</h2><p>首先得有一个github账号，没有就去注册一个吧，据我了解，这是程序员必备品。</p>
 <p>1、在自己的github页面中找到它，建一个库</p>
 <p> <img src="http://7xtsii.com1.z0.glb.clouddn.com/a1.png" alt=""></p>
 <p>2、取一个名字 格式如下:在<code>Repository name</code>下填写<code>yourname.github.io</code>，然后OK</p>
-<p>###注意:</p>
-<pre><code>yourname要和你github的名字一致,比如我的github上的名字是Lynn081，然后再瞟一眼我的博客,机智如你。
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意:"></a>注意:</h3><pre><code>yourname要和你github的名字一致,比如我的github上的名字是Lynn081，然后再瞟一眼我的博客,机智如你。
 </code></pre><p>3、点击界面右侧的<code>Settings</code>，向下拖动，直到看见<code>GitHub Pages</code>,点击<code>Automatic page generator</code>，Github将会自动替你创建出一个<code>gh-pages</code>的页面。<br>15分钟后你就可以访问你的博客了~~~</p>
 <p> <img src="http://7xtsii.com1.z0.glb.clouddn.com/a3.png" alt=""></p>
-<h2 id="我是分界线-3"><a href="#我是分界线-3" class="headerlink" title="######我是分界线"></a>######我是分界线</h2><p>#配置hexo<br>1、建一个文件夹，给hexo安一个家，然后在里面打开git bash界面，输入如下命令：</p>
-<pre><code>* npm install hexo-cli -g
+<h6 id="我是分界线-3"><a href="#我是分界线-3" class="headerlink" title="我是分界线"></a>我是分界线</h6><hr>
+<h1 id="配置hexo"><a href="#配置hexo" class="headerlink" title="配置hexo"></a>配置hexo</h1><h3 id="1-建一个文件夹，给hexo安一个家，然后在里面打开git-bash界面，输入如下命令："><a href="#1-建一个文件夹，给hexo安一个家，然后在里面打开git-bash界面，输入如下命令：" class="headerlink" title="1. 建一个文件夹，给hexo安一个家，然后在里面打开git bash界面，输入如下命令："></a>1. 建一个文件夹，给hexo安一个家，然后在里面打开git bash界面，输入如下命令：</h3><pre><code>* npm install hexo-cli -g
 * npm install hexo --save
-</code></pre><p>2、接下来我们检测一下是否安装好了，继续输入：</p>
-<pre><code>hexo -v
-</code></pre><p>当看到如下界面，congratulation! <code>^_^</code></p>
+</code></pre><h3 id="2-接下来我们检测一下是否安装好了，继续输入："><a href="#2-接下来我们检测一下是否安装好了，继续输入：" class="headerlink" title="2. 接下来我们检测一下是否安装好了，继续输入："></a>2. 接下来我们检测一下是否安装好了，继续输入：</h3><pre><code>hexo -v
+</code></pre><p>  当看到如下界面，congratulation! <code>^_^</code></p>
 <p><img src="http://7xtsii.com1.z0.glb.clouddn.com/a4.png" alt=""></p>
-<p>3、初始化hexo</p>
-<pre><code>hexo init
-</code></pre><p>4、接下来要安装npm,至于什么是npm，点这里了解<a href="http://baike.baidu.com/link?url=g4NVNdKM3ma-kq7Z_4oaZNxNSV7YmhvBHqKbWy3BxClAcz6WJE4oplvPtYDxom0o-_HYCEBuBhbXQbD094aK3_" target="_blank" rel="external">npm</a>，继续命令行</p>
-<pre><code>npm install
+<h3 id="3-初始化hexo"><a href="#3-初始化hexo" class="headerlink" title="3. 初始化hexo"></a>3. 初始化hexo</h3><pre><code>hexo init
+</code></pre><h3 id="4-接下来要安装npm-至于什么是npm，点这里了解npm，继续命令行"><a href="#4-接下来要安装npm-至于什么是npm，点这里了解npm，继续命令行" class="headerlink" title="4. 接下来要安装npm,至于什么是npm，点这里了解npm，继续命令行"></a>4. 接下来要安装npm,至于什么是npm，点这里了解<a href="http://baike.baidu.com/link?url=g4NVNdKM3ma-kq7Z_4oaZNxNSV7YmhvBHqKbWy3BxClAcz6WJE4oplvPtYDxom0o-_HYCEBuBhbXQbD094aK3_" target="_blank" rel="external">npm</a>，继续命令行</h3><pre><code>npm install
 
 如果命令无法运行，可以尝试更换taobao的npm源
 npm install -g cnpm --registry=https://registry.npm.taobao.org
-</code></pre><p>5、这些都配置好后，就可以体验hexo了，输入命令</p>
-<pre><code>hexo -g ------&gt;相当于hexo generate：部署网页
+</code></pre><h3 id="5-这些都配置好后，就可以体验hexo了，输入命令"><a href="#5-这些都配置好后，就可以体验hexo了，输入命令" class="headerlink" title="5. 这些都配置好后，就可以体验hexo了，输入命令"></a>5. 这些都配置好后，就可以体验hexo了，输入命令</h3><pre><code>hexo -g ------&gt;相当于hexo generate：部署网页
 hexo -s ------&gt;相当于hexo server：打开服务器
 </code></pre><p>进入网址<code>http://localhost:4000/</code>就可以看到你的博客面目了！</p>
-<h2 id="分界线空降"><a href="#分界线空降" class="headerlink" title="#######分界线空降"></a>#######分界线空降</h2><hr>
-<p>#配置yilia主题<br>是不是觉得这个主题不是很满意，但是lynn目前还不会这些前端知识，所以就偷懒clone别人的吧！后面修改一些小东西就好了。</p>
-<p>1、clone主题，这里Lynn选择的是yilia毕竟比较简洁，进入到文件夹<code>hexo</code>，然后打开<code>git bash</code>输入命令：</p>
-<pre><code>git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
-</code></pre><p>2、在hexo的<code>_config.yml</code>中修改 </p>
-<pre><code>themes:yilia
+<h6 id="分界线空降"><a href="#分界线空降" class="headerlink" title="分界线空降"></a>分界线空降</h6><hr>
+<h1 id="配置yilia主题"><a href="#配置yilia主题" class="headerlink" title="配置yilia主题"></a>配置yilia主题</h1><p>是不是觉得这个主题不是很满意，但是lynn目前还不会这些前端知识，所以就偷懒clone别人的吧！后面修改一些小东西就好了。</p>
+<h3 id="1、-clone主题，这里Lynn选择的是yilia毕竟比较简洁，进入到文件夹hexo，然后打开git-bash输入命令："><a href="#1、-clone主题，这里Lynn选择的是yilia毕竟比较简洁，进入到文件夹hexo，然后打开git-bash输入命令：" class="headerlink" title="1、 clone主题，这里Lynn选择的是yilia毕竟比较简洁，进入到文件夹hexo，然后打开git bash输入命令："></a>1、 clone主题，这里Lynn选择的是yilia毕竟比较简洁，进入到文件夹<code>hexo</code>，然后打开<code>git bash</code>输入命令：</h3><pre><code>git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
+</code></pre><h3 id="2、在hexo的-config-yml中修改"><a href="#2、在hexo的-config-yml中修改" class="headerlink" title="2、在hexo的_config.yml中修改"></a>2、在hexo的<code>_config.yml</code>中修改</h3><pre><code>themes:yilia
 </code></pre><p>根据自己喜好做这些修改：</p>
 <p><img src="http://7xtsii.com1.z0.glb.clouddn.com/a6.png" alt=""></p>
 <p>添加一些自己想要的标签：</p>
 <p><img src="http://7xtsii.com1.z0.glb.clouddn.com/a7.png" alt=""></p>
 <p>设置你的头像，两种方法：</p>
-<p>1、直接贴上照片的url<br>2、把照片存到yilia中的<code>img</code>文件夹中,然后照着lynn的格式，注意冒号后要空一个字符</p>
+<ul>
+<li>直接贴上照片的url</li>
+<li>把照片存到yilia中的<code>img</code>文件夹中,然后照着lynn的格式，注意冒号后要空一个字符</li>
+</ul>
 <p><img src="http://7xtsii.com1.z0.glb.clouddn.com/a9.png" alt=""></p>
-<p>3、开始配置属于自己的yilia主题</p>
-<p>进入<code>hexo\themes\yilia</code>,打开<code>_config,yml</code>信息根据自己的情况做修改</p>
+<h3 id="3、-开始配置属于自己的yilia主题"><a href="#3、-开始配置属于自己的yilia主题" class="headerlink" title="3、 开始配置属于自己的yilia主题"></a>3、 开始配置属于自己的yilia主题</h3><p>进入<code>hexo\themes\yilia</code>,打开<code>_config,yml</code>信息根据自己的情况做修改</p>
 <p><img src="http://7xtsii.com1.z0.glb.clouddn.com/a8.png" alt=""></p>
-<p>4、更新主题</p>
-<p>进入<code>hexo/themes/yilia</code>,右键打开<code>Git Bush</code>,执行 <code>git pull</code>:</p>
+<h3 id="4、-更新主题"><a href="#4、-更新主题" class="headerlink" title="4、 更新主题"></a>4、 更新主题</h3><p>进入<code>hexo/themes/yilia</code>,右键打开<code>Git Bush</code>,执行 <code>git pull</code>:</p>
 <p>到这里博客就算是搭好了， 退到hexo文件夹里面，输入命令<code>hexo g</code>跟<code>hexo s</code><br>，可以到本地看样式，然后上传到github上去。</p>
-<p>##关于把博客上传到github<br>  1、在本地建一个文件夹如blog，用github把之前建的库clone下来</p>
-<p>  2、将hexo文件夹中的<code>public</code>所有文件复制到文件夹blog，然后把blog上传到github</p>
+<h2 id="关于把博客上传到github"><a href="#关于把博客上传到github" class="headerlink" title="关于把博客上传到github"></a>关于把博客上传到github</h2><ol>
+<li><p>在本地建一个文件夹如blog，用github把之前建的库clone下来</p>
+</li>
+<li><p>在文件夹<code>hexo/source/_posts</code>中添加md文件，写好后执行命令<code>hexo g</code>，最好再执行<code>hexo s</code>在本地看看博客的样式，用Markdown写博客要注意<strong>格式符跟文字要空一格</strong></p>
+</li>
+<li>将hexo文件夹中的<code>public</code>所有文件复制到文件夹blog，然后把blog上传到github</li>
+</ol>
 
       
     </div>
