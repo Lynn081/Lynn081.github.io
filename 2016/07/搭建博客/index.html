@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>零基础hexo+github搭建主题为yilia博客 | Lynn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="#前言 之前在博客园跟CDNS都注册了博客，后面觉得自己搭一个才属于自己，跟着各种大神博客教程折腾，中途遇到了很多意料之外的问题，寻找方案，也还算是搭出个样子了。以后接触更多再修改吧！跨出第一步很容易，可是坚持下来就比较难了！下面就介绍我的搭建过程吧，不好的地方多多指教。^_^
+######我是分界线#主要步骤
+* git环境
+* 安装Nodejs
+* 用github page建一个库
+* 安装h">
+<meta property="og:type" content="article">
+<meta property="og:title" content="零基础hexo+github搭建主题为yilia博客">
+<meta property="og:url" content="http://yoursite.com/2016/05/07/搭建博客/index.html">
+<meta property="og:site_name" content="Lynn">
+<meta property="og:description" content="#前言 之前在博客园跟CDNS都注册了博客，后面觉得自己搭一个才属于自己，跟着各种大神博客教程折腾，中途遇到了很多意料之外的问题，寻找方案，也还算是搭出个样子了。以后接触更多再修改吧！跨出第一步很容易，可是坚持下来就比较难了！下面就介绍我的搭建过程吧，不好的地方多多指教。^_^
+######我是分界线#主要步骤
+* git环境
+* 安装Nodejs
+* 用github page建一个库
+* 安装h">
+<meta property="og:image" content="http://7xtsii.com1.z0.glb.clouddn.com/a5.png">
+<meta property="og:image" content="http://7xtsii.com1.z0.glb.clouddn.com/a1.png">
+<meta property="og:image" content="http://7xtsii.com1.z0.glb.clouddn.com/a3.png">
+<meta property="og:image" content="http://7xtsii.com1.z0.glb.clouddn.com/a4.png">
+<meta property="og:image" content="http://7xtsii.com1.z0.glb.clouddn.com/a6.png">
+<meta property="og:image" content="http://7xtsii.com1.z0.glb.clouddn.com/a7.png">
+<meta property="og:image" content="http://7xtsii.com1.z0.glb.clouddn.com/a9.png">
+<meta property="og:image" content="http://7xtsii.com1.z0.glb.clouddn.com/a8.png">
+<meta property="og:updated_time" content="2016-05-07T08:47:48.434Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="零基础hexo+github搭建主题为yilia博客">
+<meta name="twitter:description" content="#前言 之前在博客园跟CDNS都注册了博客，后面觉得自己搭一个才属于自己，跟着各种大神博客教程折腾，中途遇到了很多意料之外的问题，寻找方案，也还算是搭出个样子了。以后接触更多再修改吧！跨出第一步很容易，可是坚持下来就比较难了！下面就介绍我的搭建过程吧，不好的地方多多指教。^_^
+######我是分界线#主要步骤
+* git环境
+* 安装Nodejs
+* 用github page建一个库
+* 安装h">
+<meta name="twitter:image" content="http://7xtsii.com1.z0.glb.clouddn.com/a5.png">
+  
+    <link rel="alternative" href="/atom.xml" title="Lynn" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="img/lynn.png" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Lynn</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">简单才最快乐</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						
+						<li>About</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">归档</a></li>
+				        
+							<li><a href="/aboutme">关于我</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/Lynn081" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/2656998691/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" title="weibo">weibo</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/生活/" style="font-size: 10px;">生活</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					<div id="js-aboutme">关于我</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Lynn</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="img/lynn.png" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Lynn</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">简单才最快乐</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">归档</a></li>
+		        
+					<li><a href="/aboutme">关于我</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/Lynn081" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/2656998691/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" title="weibo">weibo</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/07/搭建博客/" class="article-date">
+  	<time datetime="2016-05-07T08:44:56.000Z" itemprop="datePublished">2016-05-07</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      零基础hexo+github搭建主题为yilia博客
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/生活/">生活</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#前言<br> 之前在博客园跟CDNS都注册了博客，后面觉得自己搭一个才属于自己，跟着各种大神博客教程折腾，中途遇到了很多意料之外的问题，寻找方案，也还算是搭出个样子了。以后接触更多再修改吧！跨出第一步很容易，可是坚持下来就比较难了！下面就介绍我的搭建过程吧，不好的地方多多指教。<code>^_^</code></p>
+<h2 id="我是分界线"><a href="#我是分界线" class="headerlink" title="######我是分界线"></a>######我是分界线</h2><p>#主要步骤</p>
+<pre><code>* git环境
+* 安装Nodejs
+* 用github page建一个库
+* 安装hexo
+* 配置主题
+</code></pre><p>下面就分别来讲讲这几个步骤：</p>
+<p>##git环境<br>了解<a href="http://baike.baidu.com/subview/1531489/12032478.htm" target="_blank" rel="external">git</a>，然后下载一个git安装到电脑上.打开安装完以后，我们需要检测是否安装完成，打开dos界面（传说中的黑框框），<code>WIN+R</code>输入<code>cmd</code>，敲上命令，出现版本号就成功了。</p>
+<pre><code>git --version
+</code></pre><h2 id="我是分界线-1"><a href="#我是分界线-1" class="headerlink" title="#######我是分界线"></a>#######我是分界线</h2><p>##安装Nodejs<br>先简单了解下<a href="http://baike.baidu.com/link?url=7ZBP5WeFD45hLlX_86aNr3-hn8096X5uBkYgzSwo3iJIDNPZKix-ID7mnMRqUFSejp5HDoJHf-v_oMGVP0UcPY7BYt_4k8y2jtdF7ptRO4C8NJPOmKStdhiUykBVcdQPMyPGbNSGLKhAih0E4tqex_" target="_blank" rel="external">Nodejs</a>吧。然后就到官网去下载一个<a href="https://nodejs.org/en/" target="_blank" rel="external">Nodejs</a>,一般下载<code>v4.4.4LTS</code>,打开安装完以后，我们需要检测是否安装完成，上命令</p>
+<pre><code>node -v
+npm -v
+</code></pre><p>看到如下界面就OK了：<br><img src="http://7xtsii.com1.z0.glb.clouddn.com/a5.png" alt=""></p>
+<h2 id="我是分界线-2"><a href="#我是分界线-2" class="headerlink" title="######我是分界线"></a>######我是分界线</h2><p>##用github page建一个库<br>首先得有一个github账号，没有就去注册一个吧，据我了解，这是程序员必备品。</p>
+<p>1、在自己的github页面中找到它，建一个库</p>
+<p> <img src="http://7xtsii.com1.z0.glb.clouddn.com/a1.png" alt=""></p>
+<p>2、取一个名字 格式如下:在<code>Repository name</code>下填写<code>yourname.github.io</code>，然后OK</p>
+<p>###注意:</p>
+<pre><code>yourname要和你github的名字一致,比如我的github上的名字是Lynn081，然后再瞟一眼我的博客,机智如你。
+</code></pre><p>3、点击界面右侧的<code>Settings</code>，向下拖动，直到看见<code>GitHub Pages</code>,点击<code>Automatic page generator</code>，Github将会自动替你创建出一个<code>gh-pages</code>的页面。<br>15分钟后你就可以访问你的博客了~~~</p>
+<p> <img src="http://7xtsii.com1.z0.glb.clouddn.com/a3.png" alt=""></p>
+<h2 id="我是分界线-3"><a href="#我是分界线-3" class="headerlink" title="######我是分界线"></a>######我是分界线</h2><p>#配置hexo<br>1、建一个文件夹，给hexo安一个家，然后在里面打开git bash界面，输入如下命令：</p>
+<pre><code>* npm install hexo-cli -g
+* npm install hexo --save
+</code></pre><p>2、接下来我们检测一下是否安装好了，继续输入：</p>
+<pre><code>hexo -v
+</code></pre><p>当看到如下界面，congratulation! <code>^_^</code></p>
+<p><img src="http://7xtsii.com1.z0.glb.clouddn.com/a4.png" alt=""></p>
+<p>3、初始化hexo</p>
+<pre><code>hexo init
+</code></pre><p>4、接下来要安装npm,至于什么是npm，点这里了解<a href="http://baike.baidu.com/link?url=g4NVNdKM3ma-kq7Z_4oaZNxNSV7YmhvBHqKbWy3BxClAcz6WJE4oplvPtYDxom0o-_HYCEBuBhbXQbD094aK3_" target="_blank" rel="external">npm</a>，继续命令行</p>
+<pre><code>npm install
+
+如果命令无法运行，可以尝试更换taobao的npm源
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+</code></pre><p>5、这些都配置好后，就可以体验hexo了，输入命令</p>
+<pre><code>hexo -g ------&gt;相当于hexo generate：部署网页
+hexo -s ------&gt;相当于hexo server：打开服务器
+</code></pre><p>进入网址<code>http://localhost:4000/</code>就可以看到你的博客面目了！</p>
+<h2 id="分界线空降"><a href="#分界线空降" class="headerlink" title="#######分界线空降"></a>#######分界线空降</h2><hr>
+<p>#配置yilia主题<br>是不是觉得这个主题不是很满意，但是lynn目前还不会这些前端知识，所以就偷懒clone别人的吧！后面修改一些小东西就好了。</p>
+<p>1、clone主题，这里Lynn选择的是yilia毕竟比较简洁，进入到文件夹<code>hexo</code>，然后打开<code>git bash</code>输入命令：</p>
+<pre><code>git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
+</code></pre><p>2、在hexo的<code>_config.yml</code>中修改 </p>
+<pre><code>themes:yilia
+</code></pre><p>根据自己喜好做这些修改：</p>
+<p><img src="http://7xtsii.com1.z0.glb.clouddn.com/a6.png" alt=""></p>
+<p>添加一些自己想要的标签：</p>
+<p><img src="http://7xtsii.com1.z0.glb.clouddn.com/a7.png" alt=""></p>
+<p>设置你的头像，两种方法：</p>
+<p>1、直接贴上照片的url<br>2、把照片存到yilia中的<code>img</code>文件夹中,然后照着lynn的格式，注意冒号后要空一个字符</p>
+<p><img src="http://7xtsii.com1.z0.glb.clouddn.com/a9.png" alt=""></p>
+<p>3、开始配置属于自己的yilia主题</p>
+<p>进入<code>hexo\themes\yilia</code>,打开<code>_config,yml</code>信息根据自己的情况做修改</p>
+<p><img src="http://7xtsii.com1.z0.glb.clouddn.com/a8.png" alt=""></p>
+<p>4、更新主题</p>
+<p>进入<code>hexo/themes/yilia</code>,右键打开<code>Git Bush</code>,执行 <code>git pull</code>:</p>
+<p>到这里博客就算是搭好了， 退到hexo文件夹里面，输入命令<code>hexo g</code>跟<code>hexo s</code><br>，可以到本地看样式，然后上传到github上去。</p>
+<p>##关于把博客上传到github<br>  1、在本地建一个文件夹如blog，用github把之前建的库clone下来</p>
+<p>  2、将hexo文件夹中的<code>public</code>所有文件复制到文件夹blog，然后把blog上传到github</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/05/05/hexo搭建一个简易博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">零基础hexo+github搭建主题为yilia博客</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+<div class="share_addthis">
+  <div class="sharing addthis_toolbox share">
+    <a class="addthis_button_facebook_like"></a>
+    <a class="addthis_button_tweet"></a>
+    <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-560c64c35486b3d4" async="async"></script>
+</div>
+
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Lynn
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: true
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
