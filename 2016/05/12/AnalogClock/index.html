@@ -4,18 +4,26 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>关于我 | Lynn</title>
+  <title>AnalogClock | Lynn</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##这是我的介绍">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于我">
-<meta property="og:url" content="http://yoursite.com/aboutme/index.html">
+  <meta name="description" content="##关于时钟AnalogClock&amp;amp;TextClock&amp;amp;Chronometer组件的介绍
+AnalogClock和TextCloc都会显示当前时间，但是TextClock显示数字时钟，可以显示当前的秒数。AnalogClock显示模拟时钟，不会显示当前的秒数。
+Chronometer是一个计时器组件，该组件跟TextClock都继承自TextView,因此它们都会显示一段文本。但C">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AnalogClock">
+<meta property="og:url" content="http://yoursite.com/2016/05/12/AnalogClock/index.html">
 <meta property="og:site_name" content="Lynn">
-<meta property="og:description" content="##这是我的介绍">
-<meta property="og:updated_time" content="2016-05-05T13:40:30.528Z">
+<meta property="og:description" content="##关于时钟AnalogClock&amp;amp;TextClock&amp;amp;Chronometer组件的介绍
+AnalogClock和TextCloc都会显示当前时间，但是TextClock显示数字时钟，可以显示当前的秒数。AnalogClock显示模拟时钟，不会显示当前的秒数。
+Chronometer是一个计时器组件，该组件跟TextClock都继承自TextView,因此它们都会显示一段文本。但C">
+<meta property="og:image" content="http://7xtsii.com1.z0.glb.clouddn.com/time.png">
+<meta property="og:updated_time" content="2016-05-12T12:27:15.520Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于我">
-<meta name="twitter:description" content="##这是我的介绍">
+<meta name="twitter:title" content="AnalogClock">
+<meta name="twitter:description" content="##关于时钟AnalogClock&amp;amp;TextClock&amp;amp;Chronometer组件的介绍
+AnalogClock和TextCloc都会显示当前时间，但是TextClock显示数字时钟，可以显示当前的秒数。AnalogClock显示模拟时钟，不会显示当前的秒数。
+Chronometer是一个计时器组件，该组件跟TextClock都继承自TextView,因此它们都会显示一段文本。但C">
+<meta name="twitter:image" content="http://7xtsii.com1.z0.glb.clouddn.com/time.png">
   
     <link rel="alternative" href="/atom.xml" title="Lynn" type="application/atom+xml">
   
@@ -172,11 +180,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-AnalogClock" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/aboutme/index.html" class="article-date">
-  	<time datetime="2016-05-05T13:22:36.000Z" itemprop="datePublished">2016-05-05</time>
+      <a href="/2016/05/12/AnalogClock/" class="article-date">
+  	<time datetime="2016-05-12T12:11:51.000Z" itemprop="datePublished">2016-05-12</time>
 </a>
     </div>
   
@@ -189,7 +197,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      关于我
+      AnalogClock
     </h1>
   
 
@@ -197,6 +205,10 @@
       
       <div class="article-info article-info-post">
         
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li></ul>
+	</div>
+
         
 
         <div class="clearfix"></div>
@@ -205,7 +217,104 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##这是我的介绍</p>
+        <p>##关于时钟AnalogClock&amp;TextClock&amp;Chronometer组件的介绍</p>
+<p>AnalogClock和TextCloc都会显示当前时间，但是TextClock显示数字时钟，可以显示当前的秒数。<br>AnalogClock显示模拟时钟，不会显示当前的秒数。</p>
+<p>Chronometer是一个计时器组件，该组件跟TextClock都继承自TextView,因此它们都会显示一段文本。但Chronometer并不显示当前时间，它显示的是从某个起始时间开始，一共过去了多长时间。</p>
+<p>直接看代码吧 比较简单。</p>
+<p>####avtivity_main.xml文件代码如下</p>
+<pre><code>`&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+android:layout_width=&quot;match_parent&quot;
+android:layout_height=&quot;match_parent&quot;
+android:orientation=&quot;vertical&quot;&gt;
+
+&lt;!--  &lt;定义模拟时钟&gt;--&gt;
+&lt;AnalogClock
+    android:layout_width=&quot;wrap_content&quot;
+    android:layout_height=&quot;wrap_content&quot;
+    /&gt;
+&lt;!--&lt;定义数字时钟&gt;--&gt;
+&lt;TextClock
+    android:layout_width=&quot;wrap_content&quot;
+    android:layout_height=&quot;wrap_content&quot;
+    android:textSize=&quot;10pt&quot;
+    android:textColor=&quot;#f0f&quot;
+    android:format12Hour=&quot;yyyy年MM月dd日 H：mma EEEE&quot;
+    /&gt;
+
+&lt;!--
+&lt;定义模拟时钟，并使用自定义表盘，时针图片&gt;
+ --&gt;
+ &lt;!-- &lt;AnalogClock
+    android:layout_width=&quot;wrap_content&quot;
+    android:layout_height=&quot;wrap_content&quot;
+    android:dial=&quot;@drawable/watch&quot;
+    /&gt;--&gt;
+ &lt;Chronometer
+  android:id=&quot;@+id/test&quot;
+  android:layout_width=&quot;match_parent&quot;
+  android:layout_height=&quot;50dp&quot;
+  android:textSize=&quot;50dp&quot;
+  /&gt;
+&lt;Button
+  android:id=&quot;@+id/start&quot;
+  android:layout_width=&quot;wrap_content&quot;
+  android:layout_height=&quot;wrap_content&quot;
+  android:text=&quot;启动&quot;
+  /&gt;
+
+&lt;/LinearLayout&gt;`
+</code></pre><p>####MainActiviyt.java</p>
+<pre><code>package com.example.lynn.abouttime;
+
+import android.os.SystemClock;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Chronometer;
+
+public class MainActivity extends AppCompatActivity {
+
+Chronometer ch;
+Button start;
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+
+
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    ch= (Chronometer) findViewById(R.id.test);
+    start= (Button) findViewById(R.id.start);
+    start.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            ch.setBase(SystemClock.elapsedRealtime());//设置俩是计时时间
+            ch.start();//启动计时器
+            start.setEnabled(false);
+        }
+    });
+
+    //为Chronometer绑定事件监听器
+    ch.setOnChronometerTickListener(new Chronometer.OnChronometerTickListener() {
+        @Override
+        public void onChronometerTick(Chronometer chronometer) {
+
+            //如果时间有20秒,就停止
+            if(SystemClock.elapsedRealtime()-ch.getBase()&gt;20*1000){
+                ch.stop();
+                start.setEnabled(true);
+
+
+            }
+        }
+    });
+}
+}
+</code></pre><p>效果图如下：</p>
+<p><img src="http://7xtsii.com1.z0.glb.clouddn.com/time.png" alt=""></p>
+<p>相信你分析下代码就会了这个组件</p>
 
       
     </div>
@@ -213,6 +322,16 @@
   </div>
   
     
+<nav id="article-nav">
+  
+  
+    <a href="/2016/05/07/搭建博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">零基础hexo+github搭建主题为yilia博客</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
   
 </article>
 
@@ -277,7 +396,7 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
